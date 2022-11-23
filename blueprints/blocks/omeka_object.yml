@@ -1,0 +1,134 @@
+name: Omeka Object
+icon: file-box
+tabs:
+  main:
+    label: Archiv Objekt
+    fields:
+      url:
+        label:
+          de: Objekt URL
+          en: object url
+        type: url
+      editor_info:
+        label:
+          de: Hinweis
+          en: Note to editors
+        type: info
+        text: |
+          Liebe Redaktion,
+
+          die untenstehenden Daten werden aus dem [Archiv](https://archiv.peter-weiss.digital) übernommen
+          bitte Änderungen dort vornehmen, sofern gewünscht. Danke
+
+          Machmal ist es dennoch notwendig eine andere Beschreibung zu verwenden als jene im Archiv.
+          für diesen Fall gibt es oben den Reiter 'Eigene Werte' dort können Daten eingetragen werden die
+          dann Daten aus dem Archiv 'überschreiben'
+
+          P.S. Wenn die Änderungen am Objekt im Archiv erfolgt sind, dann noch einmal hier öffnen
+          und die Seite neu speichern. Dann werden die Änderungen übernomen
+      images:
+        label:
+          de: Bilder
+          en: Images
+        help:
+          de: Bilder werde nach dem Speichern der Seite automatisch heruntergeladen und verknüpft
+          en: images will be downloaded and linked after saving of the page
+        type: files
+        uploads: omeka_image
+        multiple: true
+        disabled: true
+
+      object_title:
+        label:
+          en: Title
+          de: Titel
+        type: text
+        placeholder: Title
+        disabled: true
+      object_id:
+        label:
+          en: Identifier (Archive)
+          de: Identifikator (Archiv)
+        disabled: true
+        type: text
+        placeholder: ark/99999/a7zfse
+      object_description:
+        label:
+          en: Description (Archive)
+          de: Beschreibung (Archiv)
+        type: writer
+        icon: text
+        incline: true
+        placeholder: Beschreibung
+        disabled: true
+      object_creator:
+        label:
+          en: Creator
+          de: Autor / Urheber
+        disabled: true
+        type: text
+      object_format:
+        label:
+          en: Format
+          de: Format
+        disabled: true
+        type: text
+      object_resource_template:
+        label:
+          en: Resource Template
+          de: Resource Template
+        disabled: true
+        type: text
+      object_type:
+        label:
+          de: Typ
+          en: Type
+        disabled: true
+        type: text
+      object_date:
+        label:
+          de: Datum
+          en: Date
+        disabled: true
+        type: text
+      object_medium:
+        disabled: true
+        type: text
+      object_rights:
+        label:
+          de: Copyright
+          en: Copyright
+        disabled: true
+        type: text
+      object_rights_link:
+        label: Copyright Link
+        disabled: true
+        type: text
+      object_bibo_isbn13:
+        label:
+          de: ISBN (wenn vorhanden)
+          en: ISBN (if applicable)
+        type: text
+        disabled: true
+      object_thumb_square:
+        type: text
+        disabled: true
+      object_thumb_large:
+        type: text
+        disabled: true
+
+  override:
+    label: Eigene Werte
+    fields:
+      title:
+        type: text
+      override_description:
+        label:
+          en: Description
+          de: Beschreibung
+        help:
+          de: Ergänzende Informationen
+        type: writer
+        icon: text
+        incline: true
+        placeholder: Beschreibung

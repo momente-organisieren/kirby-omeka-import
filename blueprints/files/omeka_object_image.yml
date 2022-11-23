@@ -1,0 +1,17 @@
+title:
+  en: Omeka Object Image
+  de: Abbild eines Omeka Objektes
+accept:
+  maxsize: 10000000
+fields:
+  alt:
+    label: Alt Text
+    type: text
+    width: 1/2
+    required: true
+  archive_ref:
+    type: text
+  focus:
+    label: My Focus Field
+    type: focus
+    width: 1/2
